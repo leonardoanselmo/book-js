@@ -35,3 +35,77 @@ console.log(x === 10);
 // Operador !== (corresponde a diferente.)
 var animal = 'Gatos';
 console.log(animal !== 'Gato');
+
+// Operadores lógicos
+// A primeira condição é ZERO e por isso é FALSE
+if((5-5) && (5+5)) {
+  console.log('Verdadeiro');
+} else {
+  console.log('Falso');
+}
+
+// Resultado aqui é 10 que é um valor Truthy
+if((5-10) && (5+5)) {
+  console.log('Verdadeiro');
+} else {
+  console.log('Falso');
+}
+
+var condicional2 = (5 - 5) || (5 + 5) || (10 -2);
+console.log(condicional2);
+
+var corFavorita = 'red';
+
+switch (corFavorita) {
+  case 'Azul':
+    console.log('Olhe para o céu');
+    break;
+  case 'Amarelo':
+    console.log('Olhe para o sol');
+    break;
+  default:
+    console.log('Feche os olhos');
+}
+
+var minhaIdade = 44;
+var idadeIrmao = 46;
+
+if(minhaIdade > idadeIrmao){
+  console.log('É maior!');
+} else if(minhaIdade === idadeIrmao) {
+  console.log('É igual');
+} else {
+  console.log('É menor!');
+}
+
+var expressao = (5-2) && (5 - '') && (5-2);
+console.log(expressao);
+
+var nome = 'Léo';
+var idade = 28;
+var possuiDoutorado = false;
+var empregoFuturo;
+var dinheiroNaConta = 0;
+
+console.log(!!nome, !!idade, !!possuiDoutorado, !!empregoFuturo, !!dinheiroNaConta);
+
+var brasil = 207;
+var china = 1340;
+
+if(brasil > china){
+  console.log('Brasil tem mais habitantes');
+} else {
+  console.log('Brasil tem menos habitantes');
+}
+
+if(('Gato' === 'gato') && (5 > 2)){
+  console.log('Verdadeiro');
+} else {
+  console.log('Falso');
+}
+
+if(('Gato' === 'gato') || (5 > 2)){
+  console.log('Gato' && 'Cão'); // Sempre vai mostrar a ultima verdadeira.  
+} else {
+  console.log('Falso');
+}
