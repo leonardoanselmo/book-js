@@ -55,3 +55,7 @@ frutas.forEach(function(item){
 
 var ultimaFruta = frutas[frutas.length - 1];
 console.log(ultimaFruta);
+
+var idade = 19;
+var podeBeber = (idade >= 18) ? 'Pode beber' : 'Não pode beber!';
+console.log(podeBeber);
