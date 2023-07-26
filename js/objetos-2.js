@@ -28,7 +28,7 @@ var cachorro = {
   raca: 'labrador',
   cor: 'preto',
   idade: 10,
-  latir: function(pessoa) {
+  latir(pessoa) {
     if(pessoa === 'homem'){
       return 'Latir';
     } else {
@@ -37,7 +37,7 @@ var cachorro = {
   }
 }
 
-console.log(cachorro.latir('menina'));
+console.log(cachorro.latir('homem'));
 // Crie um objeto de um cachorro que represente um labrador,
 // preto com 10 anos, que late ao ver um homem
 
